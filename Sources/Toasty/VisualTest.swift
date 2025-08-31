@@ -1,9 +1,3 @@
-//
-//  Test.swift
-//  Toasty
-//
-//  Created by Carter Ewen on 8/31/25.
-//
 import SwiftUI
 
 // MARK: - Preview / Example Usage
@@ -129,20 +123,23 @@ struct ModernToastPreview: View {
                 Label("Examples", systemImage: "2.circle")
             }
         }
-        // Convenient API (recommended):
+        // Toast host is applied at the ContentView level to work with navigation
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                NavigationLink("Toasts", destination: ModernToastPreview())
+            }
+            .navigationTitle("UI Experiments")
+        }
         .toasts()
-        
-        // Alternative explicit API for custom positioning:
-        // .overlay(alignment: .top) { ToastHost(spacing: 12) }
     }
 }
 
 #Preview {
-    ModernToastPreview()
-        // Modern approach: inject ToastManager through environment
+    ContentView()
         .environment(\.toastManager, ToastManager())
 }
-
-
-
-

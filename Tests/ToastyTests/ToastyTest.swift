@@ -267,7 +267,7 @@ final class ToastyTests: XCTestCase {
     func testCustomDuration() {
         var config = ToastConfiguration()
         config.defaultDuration = 2.0
-        let manager = ToastManager(configuration: config) To
+        let manager = ToastManager(configuration: config)
         
         // Using default duration
         manager.show(.info("Test"))
