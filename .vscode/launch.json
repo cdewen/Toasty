@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Toasty}",
+            "name": "Debug ToastyToastDemo",
+            "program": "${workspaceFolder:Toasty}/.build/debug/ToastyToastDemo",
+            "preLaunchTask": "swift: Build Debug ToastyToastDemo"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Toasty}",
+            "name": "Release ToastyToastDemo",
+            "program": "${workspaceFolder:Toasty}/.build/release/ToastyToastDemo",
+            "preLaunchTask": "swift: Build Release ToastyToastDemo"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Toasty}",
+            "name": "Debug SimpleCounterDemo",
+            "program": "${workspaceFolder:Toasty}/.build/debug/SimpleCounterDemo",
+            "preLaunchTask": "swift: Build Debug SimpleCounterDemo"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Toasty}",
+            "name": "Release SimpleCounterDemo",
+            "program": "${workspaceFolder:Toasty}/.build/release/SimpleCounterDemo",
+            "preLaunchTask": "swift: Build Release SimpleCounterDemo"
+        }
+    ]
+}
