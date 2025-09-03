@@ -17,16 +17,6 @@ A modern, accessible, and highly customizable toast notification library for Swi
 - 🚀 **Swift 6.0**: Modern concurrency with strict concurrency checking
 - 📦 **Swift Package Manager**: Easy integration with SPM
 
-## 📸 Screenshots
-
-### Toast Styles
-*Add screenshots showing:*
-- Success toast with green checkmark
-- Error toast with red X
-- Info toast with blue info icon
-- Loading toast with spinning indicator
-- Custom toast with user-defined styling
-
 ### Expanded Stack View
 *Add screenshot showing multiple toasts expanded into a vertical list*
 
